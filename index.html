@@ -1,107 +1,99 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  
+  <meta name="description"
+    content="Bienvenue sur mon site portfolio. Je suis développeur full stack et je me spécialise dans la création de sites Web conviviaux, réactifs et accessibles. Explorez mes projets, mes travaux open source et contactez-moi pour toute demande ou collaboration." />
 
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Yaya Aladji AYA 's Portfolio">
+  <meta itemprop="description"
+    content="Bienvenue sur mon site portfolio. Je suis développeur full stack et je me spécialise dans la création de sites Web conviviaux, réactifs et accessibles. Explorez mes projets, mes travaux open source et contactez-moi pour toute demande ou collaboration.">
 
-    <meta
-      name="description"
-      content="Bienvenue sur mon site portfolio. Je suis développeur full stack et je me spécialise dans la création de sites Web conviviaux, réactifs et accessibles. Explorez mes projets, mes travaux open source et contactez-moi pour toute demande ou collaboration."
-    />
+  <!-- Reference screenshot of updated site's header in place of content -->
+  <meta itemprop="image" content="assets/images/sharing-card.png">
 
-    <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Yaya Aladji AYA 's Portfolio">
-<meta itemprop="description" content="Bienvenue sur mon site portfolio. Je suis développeur full stack et je me spécialise dans la création de sites Web conviviaux, réactifs et accessibles. Explorez mes projets, mes travaux open source et contactez-moi pour toute demande ou collaboration.">
+  <!-- Facebook Meta Tags -->
 
-<!-- Reference screenshot of updated site's header in place of content -->
-<meta itemprop="image" content="assets/images/sharing-card.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yaya Aladji AYA 's Portfolio">
+  <meta property="og:description"
+    content="Bienvenue sur mon site portfolio. Je suis développeur full stack et je me spécialise dans la création de sites Web conviviaux, réactifs et accessibles. Explorez mes projets, mes travaux open source et contactez-moi pour toute demande ou collaboration.">
 
-<!-- Facebook Meta Tags -->
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta property="og:image" content="assets/images/sharing-card.png">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yaya Aladji AYA 's Portfolio">
-<meta property="og:description" content="Bienvenue sur mon site portfolio. Je suis développeur full stack et je me spécialise dans la création de sites Web conviviaux, réactifs et accessibles. Explorez mes projets, mes travaux open source et contactez-moi pour toute demande ou collaboration.">
-
-<!-- Reference screenshot of updated site's header in content -->
-<meta property="og:image" content="assets/images/sharing-card.png">
-
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Yaya Aladji AYA 's Portfolio">
-<meta name="twitter:description" content="Bienvenue sur mon. Un développeur full stack compétent qui crée des sites web et des applications mobiles performants, accessibles et offrant une expérience utilisateur (UX) riche.
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yaya Aladji AYA 's Portfolio">
+  <meta name="twitter:description" content="Bienvenue sur mon. Un développeur full stack compétent qui crée des sites web et des applications mobiles performants, accessibles et offrant une expérience utilisateur (UX) riche.
 .">
 
-    <link
-      rel="preload"
-      href="assets/fonts/Mona-Sans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 
-    <!-- Your name here -->
-    <title>Yaya Aladji AYA's Portfolio</title>
-  </head>
+  <!-- Your name here -->
+  <title>Yaya Aladji AYA's Portfolio</title>
+</head>
 
-  <body>
+<body>
 
-    <script>
-      const theme = localStorage.getItem("theme") || "dark";
-      document.body.classList.add(theme);
-    </script>
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
 
-    <header class="header">
+  <header class="header">
 
-      <div class="menu-btn-container">
-        <div class="container">
-          <button type="button" class="menu-btn">menu</button>
-        </div>
-      </div>
-
-      <nav class="nav hidden">
-        <ol class="nav-items">
-          <li class="nav-item"><a href="#">Acceuil</a></li>
-          <li class="nav-item"><a href="#work">Porfolio</a></li>
-          <li class="nav-item"><a href="#blog">Mes Services</a></li>
-          <li class="nav-item"><a href="#skills">Mes Compétences</a></li>
-          <li class="nav-item">
-            <a href="#contact" data-focused="last-focused">Contact</a>
-          </li>
-        </ol>
-      </nav>
-
+    <div class="menu-btn-container">
       <div class="container">
-        <div class="header-textbox">
-          <!-- Replace with your name and job title -->
-          <h1 class="h1">
-            Bonjour, Je suis Yaya Aladji AYA<br />
-           Developpeur Fullstack
-          </h1>
+        <button type="button" class="menu-btn">menu</button>
+      </div>
+    </div>
 
-          <!-- Add a small introductory paragraph about yourself -->
-          <p class="header-text">
-            Un développeur full stack compétent qui crée des sites web et des applications mobiles performants, accessibles et offrant une expérience utilisateur (UX) riche.
-          </p>
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">Acceuil</a></li>
+        <li class="nav-item"><a href="#work">Porfolio</a></li>
+        <li class="nav-item"><a href="#blog">Mes Services</a></li>
+        <li class="nav-item"><a href="#skills">Mes Compétences</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contact</a>
+        </li>
+      </ol>
+    </nav>
 
-          <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">Contactez-moi</a>
-            <a href="#work" class="btn btn-secondary">Voir mes projets</a>
-          </div>
+    <div class="container">
+      <div class="header-textbox">
+        <!-- Replace with your name and job title -->
+        <h1 class="h1">
+          Bonjour, Je suis Yaya Aladji AYA<br />
+          Developpeur Fullstack
+        </h1>
+
+        <!-- Add a small introductory paragraph about yourself -->
+        <p class="header-text">
+          Un développeur full stack compétent qui crée des sites web et des applications mobiles performants,
+          accessibles et offrant une expérience utilisateur (UX) riche.
+        </p>
+
+        <div class="header-btns">
+          <a href="#contact" class="btn btn-cta">Contactez-moi</a>
+          <a href="#work" class="btn btn-secondary">Voir mes projets</a>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <!-- <section class="client">
+  <main>
+    <!-- <section class="client">
         <div class="container">
           <h2 class="h2">Ils me font confiances</h2>
           <div class="logos">
@@ -190,443 +182,362 @@
         </div>
       </section> -->
 
-      <section class="work">
-        <div class="container">
-          <h2 class="h2" id="work">Derniers projets</h2>
-          <div class="work-boxes">
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">Keneya Deme</h3>
-                <!-- Add small description of your project  -->
-                <p class="work-text">
-                 Une apllication mobile pour la prevention et le traitement des maladies tropicales négligées.
-                </p>
-                <!-- Add technologies you used to build the project -->
-                <ol class="work-technologies">
-                  <li>Flutter</li>
-                  <li>Spring-Boot</li>
-                  <li>Angular</li>
-                  <li>CSS</li>
-                </ol>
-
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://github.com/ayaya6436/keneyadememobile" target="_blank" rel="noopener" class="link"
-                    >Voir plus</a
-                  >
-
-                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/ayaya6436/keneyadememobile"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-
-         <!-- Update img src and alt attribute  -->
-
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/keneya.png"
-                  alt="agency elevation"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">CleanPressing</h3>
-                <!-- Add small description of your project  -->
-
-                <p class="work-text">Une application web pour la bonne gestion des pressing de nettoyage.</p>
-                <ol class="work-technologies">
-                  <li>Php</li>
-                  <li>JavaScript</li>
-                  <li>SCSS</li>
-                </ol>
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://github.com/ayaya6436/gestionPressing" target="_blank" rel="noopener" class="link"
-                    >Voir plus</a
-                  >
-
-                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/ayaya6436/gestionPressing"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-         <!-- Update img src and alt attribute  -->
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/pressClean.png"
-                  alt="portfolio template"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">SweetTravel</h3>
-                <!-- Add small description of your project  -->
-                <p class="work-text">
-                 Une application desktop pour une bonne gestion des agences de voyages.
-                </p>
-                <ol class="work-technologies">
-                  <li>Java</li>
-                  
-                </ol>
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://github.com/ayaya6436/SweetTravel2" target="_blank" rel="noopener" class="link"
-                    >Voir plus</a
-                  >
-
-                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/ayaya6436/SweetTravel2"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-         <!-- Update img src and alt attribute  -->
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/sweetTravel.png"
-                  alt="contribute dev"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-
-   
-
-      <section class="article">
-        <div class="container">
-          <h2 class="h2" id="blog">Mes Services</h2>
-          <div class="article-boxes">
-            
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">Conception UX|UI.</h3>
-                  <p class="article-text">
-                    Je suis passionné par la création d'expériences numériques mémorables et engageantes. En tant que concepteur UX|UI et développeur d'applications web et mobile, 
-                    je m'efforce de fusionner l'art et la technologie pour donner vie à des produits numériques exceptionnels.
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">
-                    Conception d'Application Web
-                  </h3>
-                  <p class="article-text">
-                    Mon approche repose sur une profonde compréhension des besoins des utilisateurs, 
-                    combinée à une esthétique visuelle raffinée et à une expérience utilisateur intuitive. 
-                    Je m'engage à travailler en étroite collaboration avec mes clients pour traduire leurs idées en interfaces utilisateur élégantes et fonctionnelles,
-                     que ce soit pour un site web, une application mobile ou une application web.
-                  </p>
-                </div>
-         
-              </div>
-            </article>
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">
-                    Conception d'Application Mobile
-                  </h3>
-                  <div class="article-text">
-                    Que vous cherchiez à créer une nouvelle expérience utilisateur immersive,
-                     à revitaliser une application existante ou à concevoir un site web percutant, je suis là pour vous accompagner à chaque étape du processus. Avec une attention méticuleuse aux détails et un engagement envers l'excellence, 
-                    je m'efforce de créer des solutions numériques qui laissent une impression durable sur vos utilisateurs.
-                  </div>
-                </div>
-               
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
-
-      <section class="skills">
-        <div class="container">
-          <h2 class="h2" id="skills">Mes outils</h2>
-          <div class="skills-imgs">
-                <img src="assets/images/skills/docker.svg" alt="React" class="skills-img" loading="lazy" title="React">
-                <img src="assets/images/skills/angular.png" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
-                 <img src="assets/images/skills/typescript.webp" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
-                 <img src="assets/images/skills/flutter.png" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
-                 <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
-                 <img src="assets/images/skills/laravel.png" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
-                 <img src="assets/images/skills/springboot.png" alt="Graph Ql" class="skills-img" loading="lazy" title="Graph QL">
-                 <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
-                 <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
-                 <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
-
-      <section>
-        <h2 class="h2">Témoignages</h2>
-        <div class="container">
-          <ol class="testimonials">
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Travailler avec AYA a été une expérience formidable. Son souci d'une esthétique épurée et son style 
-                de communication ouvert nous ont aidés à collaborer étroitement sur la solution.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/avatar1.png"
-                  alt="avatar"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Dr Patrick kayupe</h3>
-                  <p class="testimonial-author-job">Enseignant-chercheur Technolab-ISTA</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                AYA est un fantastique concepteur et développeur UI/UX avec un sens aigu du marketing et 
-                de la génération de leads. C'est le seul concepteur que je connaisse qui possède également
-                 une compréhension approfondie du code et du développement front-end.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/avatar1.png"
-                  alt="avatar"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">
-                   Mme Demebele Fatoumata Kalloga
-                  </h3>
-                  <p class="testimonial-author-job">Deveoloppeur full stack / Formateur Orange Kalanso
-                  </p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-
-                Son expertise en backend complète parfaitement son savoir-faire en frontend, ce qui lui permet de créer des applications web complètes et performantes,
-                offrant ainsi une expérience utilisateur exceptionnelle à ses clients.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/avatar1.png"
-                  alt="avatar"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Dr Mahamadou Kante</h3>
-                  <p class="testimonial-author-job">Enseignant-chercheur Institut des sciences humaines</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                AYA est un vrai professionnel doté d'un talent incroyable. C'est un créatif
-                penseur, a le doigt sur le pouls de ce qui va arriver, et
-                absolument l'un des résolveurs de problèmes les plus rapides et les meilleurs que j'ai
-                déjà rencontré.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/avatar1.png"
-                  alt="avatar"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Nohou Maiga</h3>
-                  <p class="testimonial-author-job">Devellopeur full stack Group ospsise</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                  AYA est l’un des personnes avec qui je préfère travailler.
-                 C'est mon collègue de référence lors du dépannage de toute nouvelle technique ou technologie,
-                 car il comprend comment résoudre des problèmes inconnus avec courage. 
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/avatar1.png"
-                  alt="avatar"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Amadou Berthe</h3>
-                  <p class="testimonial-author-job">Devellopeur full stack Group ospsise</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                AYA est un developpeur talentueux. Il est très expérimenté et peut donner une belle apparence à tout projet sur lequel vous travaillez. Il est
-                facile à travailler et autonome. Je travaillerais avec AYA
-                encore.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/avatar1.png"
-                  alt="avatar"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Ibrahima Traore</h3>
-                  <p class="testimonial-author-job">Ingénieur systèmes administration CMDT</p>
-                </figcaption>
-              </figure>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="contact">
-        <div class="container">
-          <h2 class="h2" id="contact">Contact</h2>
-          <div class="contact-content">
-            <div class="contact-textbox">
-              <!-- Please comment this component if you're not available for hire -->
-              <strong href="#" class="hire-alert">
-                <span class="indicator"></span>
-                Disponible pour des opportunités professionnelles.
-              </strong>
-              <p class="contact-text">
-                En tant qu'ingénieur logiciel, je développe des interfaces web 
-                et conçois des systèmes avec un intérêt particulier
-                 pour l'accessibilité et les performances. 
-                 J'ai l'habitude de coder des éléments à partir de zéro et j'apprécie donner vie à des idées.
-
-                
-              </p>
-              <p class="contact-text">
-                Je suis également un développeur open source, et pendant mon temps libre, je pratique l'art numérique avec la suite d'abobe.
-                 
-              </p>
-              <!-- Replace src with your signatures and name -->
-             
-            </div>
-            <form action="#" class="contact-form" netlify>
-              <div class="form-field">
-                <label for="name">Nom</label>
-                <input type="text" name="name" id="name" required />
-              </div>
-              <div class="form-field">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  inputmode="email"
-                />
-              </div>
-              <div class="form-field">
-                <label for="message">Messages</label>
-                <textarea name="message" id="message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-cta">Envoyer</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <section class="work">
       <div class="container">
-        <div class="footer-content">
-          <!-- Update href and src attributes -->
-          <nav>
-            <ol class="footer-links">
-              <li class="footer-link">
-                <a title="GitHub" href="https://github.com/ayaya6436" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/github.svg"
-                    alt="GitHub"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/yaya-aladji-aya-376bba1a2" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/linkedin.svg"
-                    alt="Linkedin"
-                /></a>
-              </li>
+        <h2 class="h2" id="work">Derniers projets</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Keneya Deme</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Une apllication mobile pour la prevention et le traitement des maladies tropicales négligées.
+              </p>
+              <!-- Add technologies you used to build the project -->
+              <ol class="work-technologies">
+                <li>Flutter</li>
+                <li>Spring-Boot</li>
+                <li>Angular</li>
+                <li>CSS</li>
+              </ol>
 
-              <!-- <li class="footer-link">
-                <a title="Codepen" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/codepen.svg"
-                    alt="Codepen"
-                /></a>
-              </li> -->
-              
-              <!-- <li class="footer-link">
-                <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/twitter.svg"
-                    alt="Twitter"
-                /></a>
-              </li> -->
-            </ol>
-          </nav>
-          <p class="footer-text">
-            &copy; <span>2024</span> <a target="_blank" rel="noopener" href="https://github.com/ayaya6436">Yaya Aladji AYA.</a>
-          </p>
-          <label class="theme-switch" for="theme-switch">
-            <span>Mode Sombre</span>
-            <input type="checkbox" id="theme-switch" role="switch"/>
-          </label>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://github.com/ayaya6436/keneyadememobile" target="_blank" rel="noopener" class="link">Voir
+                  plus</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/ayaya6436/keneyadememobile" target="_blank" rel="noopener"
+                  title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Update img src and alt attribute  -->
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/keneya.png" alt="agency elevation" />
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">CleanPressing</h3>
+              <!-- Add small description of your project  -->
+
+              <p class="work-text">Une application web pour la bonne gestion des pressing de nettoyage.</p>
+              <ol class="work-technologies">
+                <li>Php</li>
+                <li>JavaScript</li>
+                <li>SCSS</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://github.com/ayaya6436/gestionPressing" target="_blank" rel="noopener" class="link">Voir
+                  plus</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/ayaya6436/gestionPressing" target="_blank" rel="noopener"
+                  title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/pressClean.png" alt="portfolio template" />
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">SweetTravel</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                Une application desktop pour une bonne gestion des agences de voyages.
+              </p>
+              <ol class="work-technologies">
+                <li>Java</li>
+
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://github.com/ayaya6436/SweetTravel2" target="_blank" rel="noopener" class="link">Voir
+                  plus</a>
+
+                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                <a href="https://github.com/ayaya6436/SweetTravel2" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/sweetTravel.png" alt="contribute dev" />
+            </picture>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+
+
+    <section class="article">
+      <div class="container">
+        <h2 class="h2" id="blog">Mes Services</h2>
+        <div class="article-boxes">
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">Conception UX|UI.</h3>
+                <p class="article-text">
+                  Je suis passionné par la création d'expériences numériques mémorables et engageantes. En tant que
+                  concepteur UX|UI et développeur d'applications web et mobile,
+                  je m'efforce de fusionner l'art et la technologie pour donner vie à des produits numériques
+                  exceptionnels.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">
+                  Conception d'Application Web
+                </h3>
+                <p class="article-text">
+                  Mon approche repose sur une profonde compréhension des besoins des utilisateurs,
+                  combinée à une esthétique visuelle raffinée et à une expérience utilisateur intuitive.
+                  Je m'engage à travailler en étroite collaboration avec mes clients pour traduire leurs idées en
+                  interfaces utilisateur élégantes et fonctionnelles,
+                  que ce soit pour un site web, une application mobile ou une application web.
+                </p>
+              </div>
+
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">
+                  Conception d'Application Mobile
+                </h3>
+                <div class="article-text">
+                  Que vous cherchiez à créer une nouvelle expérience utilisateur immersive,
+                  à revitaliser une application existante ou à concevoir un site web percutant, je suis là pour vous
+                  accompagner à chaque étape du processus. Avec une attention méticuleuse aux détails et un engagement
+                  envers l'excellence,
+                  je m'efforce de créer des solutions numériques qui laissent une impression durable sur vos
+                  utilisateurs.
+                </div>
+              </div>
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+    <section class="skills">
+      <div class="container">
+        <h2 class="h2" id="skills">Mes outils</h2>
+        <div class="skills-imgs">
+          <img src="assets/images/skills/docker.svg" alt="React" class="skills-img" loading="lazy" title="React">
+          <img src="assets/images/skills/angular.png" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
+          <img src="assets/images/skills/typescript.webp" alt="Typescript" class="skills-img" loading="lazy"
+            title="Typescript">
+          <img src="assets/images/skills/flutter.png" alt="Accessibility" class="skills-img" loading="lazy"
+            title="Web Accessibility">
+          <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+          <img src="assets/images/skills/laravel.png" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+          <img src="assets/images/skills/springboot.png" alt="Graph Ql" class="skills-img" loading="lazy"
+            title="Graph QL">
+          <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+          <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+          <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
+
+    <section>
+      <h2 class="h2">Témoignages</h2>
+      <div class="container">
+        <ol class="testimonials">
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Travailler avec AYA a été une expérience formidable. Son souci d'une esthétique épurée et son style
+              de communication ouvert nous ont aidés à collaborer étroitement sur la solution.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/avatar1.png" alt="avatar" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Dr Patrick kayupe</h3>
+                <p class="testimonial-author-job">Enseignant-chercheur Technolab-ISTA</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              AYA est un fantastique concepteur et développeur UI/UX avec un sens aigu du marketing et
+              de la génération de leads. C'est le seul concepteur que je connaisse qui possède également
+              une compréhension approfondie du code et du développement front-end.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/avatar1.png" alt="avatar" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">
+                  Mme Demebele Fatoumata Kalloga
+                </h3>
+                <p class="testimonial-author-job">Deveoloppeur full stack / Formateur Orange Kalanso
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+
+              Son expertise en backend complète parfaitement son savoir-faire en frontend, ce qui lui permet de créer
+              des applications web complètes et performantes,
+              offrant ainsi une expérience utilisateur exceptionnelle à ses clients.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/avatar1.png" alt="avatar" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Dr Mahamadou Kante</h3>
+                <p class="testimonial-author-job">Enseignant-chercheur Institut des sciences humaines</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              AYA est un vrai professionnel doté d'un talent incroyable. C'est un créatif
+              penseur, a le doigt sur le pouls de ce qui va arriver, et
+              absolument l'un des résolveurs de problèmes les plus rapides et les meilleurs que j'ai
+              déjà rencontré.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/avatar1.png" alt="avatar" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Nohou Maiga</h3>
+                <p class="testimonial-author-job">Devellopeur full stack Group ospsise</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              AYA est l’un des personnes avec qui je préfère travailler.
+              C'est mon collègue de référence lors du dépannage de toute nouvelle technique ou technologie,
+              car il comprend comment résoudre des problèmes inconnus avec courage.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/avatar1.png" alt="avatar" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Amadou Berthe</h3>
+                <p class="testimonial-author-job">Devellopeur full stack Group ospsise</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              AYA est un developpeur talentueux. Il est très expérimenté et peut donner une belle apparence à tout
+              projet sur lequel vous travaillez. Il est
+              facile à travailler et autonome. Je travaillerais avec AYA
+              encore.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/avatar1.png" alt="avatar" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Ibrahima Traore</h3>
+                <p class="testimonial-author-job">Ingénieur systèmes administration CMDT</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2 class="h2" id="contact">Contact</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <!-- Please comment this component if you're not available for hire -->
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              Disponible pour des opportunités professionnelles.
+            </strong>
+            <p class="contact-text">
+              En tant qu'ingénieur logiciel, je développe des interfaces web
+              et conçois des systèmes avec un intérêt particulier
+              pour l'accessibilité et les performances.
+              J'ai l'habitude de coder des éléments à partir de zéro et j'apprécie donner vie à des idées.
+
+
+            </p>
+            <p class="contact-text">
+              Je suis également un développeur open source, et pendant mon temps libre, je pratique l'art numérique avec
+              la suite d'abobe.
+
+            </p>
+            <!-- Replace src with your signatures and name -->
+
+          </div>
+          <form action="#" class="contact-form" netlify>
+            <div class="form-field">
+              <label for="name">Nom</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required inputmode="email" />
+            </div>
+            <div class="form-field">
+              <label for="message">Messages</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-cta">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Update href and src attributes -->
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="GitHub" href="https://github.com/ayaya6436" target="_blank" rel="noopener"><img loading="lazy"
+                  src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Linkedin" href="https://www.linkedin.com/in/yaya-aladji-aya-376bba1a2" target="_blank"
+                rel="noopener"><img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin" /></a>
+            </li>
+
+          </ol>
+        </nav>
+        <p class="footer-text">
+          &copy; <span>2024</span> <a target="_blank" rel="noopener" href="https://github.com/ayaya6436">Yaya Aladji
+            AYA.</a>
+        </p>
+        <label class="theme-switch" for="theme-switch">
+          <span>Mode Sombre</span>
+          <input type="checkbox" id="theme-switch" role="switch" />
+        </label>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
